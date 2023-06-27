@@ -51,7 +51,7 @@ export default function Home() {
                 <a href="https://goods.kurly.it/Kb6W">https://goods.kurly.it/Kb6W</a>
                 <br />
                 <br />
-                <a href={currentHost+'/iframe'}>게임링크(ex. www.kurly.com/games/terraceKurly)</a>
+                <a href={currentHost+'/games/terraceKurly'}>게임링크(ex. www.kurly.com/games/terraceKurly)</a>
                 <br />
                 <br />
                 <a href="kurly://games/terraceKurly?foo=bar">kurly://games/terraceKurly?foo=bar</a>
