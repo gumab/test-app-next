@@ -33,6 +33,7 @@ export default function Iframe({ isWebView, isIOS }: ServerProp<typeof getServer
       `}</style>
       <Head>
         <title>Iframe Tester</title>
+        <link rel="alternate" href="android-app://com.dbs.kurly.m2/https/www.stg.kurly.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
       {isWebView ? (
