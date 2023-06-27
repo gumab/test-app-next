@@ -1,0 +1,23 @@
+{
+  "name": "test-app-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.3",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+  }
+}
