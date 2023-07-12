@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { NextPageContext } from 'next';
+import UAParse from 'ua-parser-js';
 
 export default function Home({ isWebView }: ServerProp<typeof getServerSideProps>) {
   useEffect(() => {
@@ -33,6 +34,9 @@ export default function Home({ isWebView }: ServerProp<typeof getServerSideProps
 
 export const getServerSideProps = async ({ req }: NextPageContext) => {
   const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
+  console.log(userAgent);
+  const a = new UAParse(userAgent);
+  console.log(a.getBrowser())
   const isWebView = /kurly/i.test(userAgent);
   return { props: { isWebView } };
 };
