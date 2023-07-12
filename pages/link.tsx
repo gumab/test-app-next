@@ -5,7 +5,11 @@ import { NextPageContext } from 'next';
 export default function Home({ isWebView }: ServerProp<typeof getServerSideProps>) {
   useEffect(() => {
     if (!isWebView) {
-      window.location.assign(`kurly://open?url=${encodeURIComponent(location.href)}`);
+      try {
+        window.location.assign(`kurly://open?url=${encodeURIComponent(location.href)}`);
+      } catch (e) {
+        // DO NOTHING
+      }
     }
   }, []);
   return (
