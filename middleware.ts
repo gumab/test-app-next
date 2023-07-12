@@ -14,4 +14,9 @@ export function middleware(request: NextRequest) {
     nextUrl.pathname = '/any';
     return NextResponse.rewrite(nextUrl);
   }
+
+  if (/^\/gateway\/goods\//.test(pathname)) {
+    const goodsCode = /^\/gateway\/goods\/(\w+)/.exec(pathname)[1];
+    return NextResponse.redirect(`https://universal-link-test-beryl.vercel.app/goods/${goodsCode}`);
+  }
 }
