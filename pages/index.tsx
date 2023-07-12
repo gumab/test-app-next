@@ -61,6 +61,9 @@ export default function Home() {
                 <br />
                 <br />
                 <a href="https://universal-link-test-beryl.vercel.app/goods/123">https://universal-link-test-beryl.vercel.app/goods/123</a>
+                <br />
+                <br />
+                <a href={currentHost+'/link'}>{currentHost+'/link'}</a>
             </main>
 
             <footer></footer>
