@@ -45,6 +45,12 @@ export default function Home() {
                 <a href="https://www.kurly.com/goods/5119903">https://www.kurly.com/goods/5119903</a>
                 <br />
                 <br />
+                <a href={currentHost+'/gateway/goods/123'}>{currentHost+'/gateway/goods/123'}</a>
+                <br />
+                <br />
+                <a href={currentHost+'/gateway302/goods/123'}>{currentHost+'/gateway302/goods/123'}</a>
+                <br />
+                <br />
                 <a href="https://universal-link-test-beryl.vercel.app/games/terraceKurly">https://universal-link-test-beryl.vercel.app/games/terraceKurly</a>
                 <br />
                 <br />
