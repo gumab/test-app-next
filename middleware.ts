@@ -19,7 +19,7 @@ export function middleware(request: NextRequest) {
     const goodsCode = /^\/gateway\/goods\/(\w+)/.exec(pathname)[1];
     return NextResponse.redirect(`https://www.kurly.com/goods/${goodsCode}`, 307);
   } else if (/^\/gateway302\/goods\//.test(pathname)) {
-    const goodsCode = /^\/gateway\/goods\/(\w+)/.exec(pathname)[1];
+    const goodsCode = /^\/gateway302\/goods\/(\w+)/.exec(pathname)[1];
     return NextResponse.redirect(`https://www.kurly.com/goods/${goodsCode}`, 302);
   }
 }
